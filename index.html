@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080c18"><title>WinGo 1M Analyzer</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="app">
+<header><div><small>FREE • GITHUB PAGES</small><h1>WinGo <span>1M</span> Analyzer</h1><p>Statistical testing dashboard</p></div><button id="refresh">↻</button></header>
+<section class="card hero"><div class="row"><div><small>NEXT ANALYSIS</small><b id="period">Loading…</b></div><i id="status">CONNECTING</i></div><div class="center"><small>MODEL CONSENSUS</small><strong id="prediction">—</strong><em id="confidence">Calculating…</em></div><div class="meter"><div id="meter"></div></div><div class="row tiny"><span>SMALL <b id="smallPct">—</b></span><span>BIG <b id="bigPct">—</b></span></div></section>
+<section class="stats"><div class="card"><small>Sample</small><strong id="sample">0</strong></div><div class="card"><small>Small</small><strong id="small">0</strong></div><div class="card"><small>Big</small><strong id="big">0</strong></div><div class="card"><small>Streak</small><strong id="streak">—</strong></div></section>
+<section class="card"><div class="row"><div><h2>Recent Results</h2><small>Public history</small></div><select id="window"><option>20</option><option selected>50</option><option>100</option></select></div><div id="results" class="results"></div></section>
+<section class="card"><h2>Analysis</h2><div class="signals"><div><small>Frequency</small><b id="freq">—</b></div><div><small>Markov</small><b id="markov">—</b></div><div><small>Momentum</small><b id="momentum">—</b></div><div><small>Streak</small><b id="streakSig">—</b></div><div><small>Gap</small><b id="gap">—</b></div><div><small>Consensus</small><b id="consensus">—</b></div></div></section>
+<section class="card"><h2>Number Distribution</h2><div id="bars" class="bars"></div></section>
+<section class="card note"><b>Research mode</b><p>This is a static browser tool. It analyzes public history when the browser permits the request. It does not access hidden RNGs, seeds, private APIs, or future results.</p></section>
+<footer>WinGo 1M Analyzer • Statistical testing only</footer></div><script src="app.js"></script></body></html>
